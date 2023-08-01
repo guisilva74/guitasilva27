@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <style>
+        img {
+          width: 50%; /* Defina a largura desejada, como 50% do contêiner */
+          height: auto; /* A altura será ajustada proporcionalmente à largura */
+        }
+    </style>
+
+    <title>Loja de Aplicativos </title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="shortcut icon" href="img/icone.jpg.ico" type="image/X-icon">
+    </head>
+    <meta charset="uf8"/>
+    <title>site principal</title>
+    <link rel="styleheet" type="text/css"href="style.css"/>
+    <body>
+    
+    <nav>
+        <a href="Index.html">Inicio</a>
+        <a href="Site_principal.html">site principal e formulário</a>
+        
+        
+        
+
+        
+    </nav>
+
+    <aside>
+
+        <h2>Ligações úteis</h2>
+        <a href="https://agnaldo.netlify.app/a%C3%A7ores" target="-blank"><img src="img/azores.jpg" class= "logosaside"></a>
+        <p>
+            <h3>Formalário de contato</h3>
+            <form action="enviar_email.php"method= "post">
+                <table>
+                    <tr>
+
+                    <td><input type="text name=nome"></td>
+                </tr>
+                <tr>
+                    <td>Mensagem:</td>
+                    <td><textarea name="mensagem"></textarea></td>
+                </tr>
+                
+                </table>
+                <input type="submit" value="Enviar">
+                </form>
+                <?php
+                if ($_SERVER["REQUEST_METHOD"] == "POSY") {
+                $nome = $_POST["nome"];
+                $nome = $_POST["email"];
+                $nome = $_POST["mensagem"];
+
+                $to = "agnaldosilva@sapo.pt";
+                $subject = "Formulário de contato";
+                $body = Nome: $nome\nEmail: $email\nmensagem: $mensagem";
+                mail($to, $subject, $body);
+                headeer("Lovation: index.html");
+                
+                }
+                ?>
+            <label for="nome">Nome:</label>
+            <input mame="nomw" type="text"id="nome" required>
+            <br>
+            <label for="telefone">Telefone:</label>
+            <input name="telefone" type="tel" id="telefone" pattern="[0-]{9}" required>
+            <br>
+            <label for="email">E-mail:</label>
+            <input name="email" type="email" id="email" required>
+            <br>
+            <label for="Localidade">Localidade:</label>
+            <br>
+            <input type="submit" value="Enviar" onclick="alert">
+    </aside> 
+
+    <header>
+
+        <h1>Agnaldo Silva</h1>
+        <h2>Loja de Aplicativos </h2>
+    </header>
+    
+    <section>
+        
+        <ul>
+            <li> Aplicativos para sites</li>
+            <li> Programas de todo tipo, em empla linguagem, para uso pessoal ou empresarial</li>
+            <li> Jogos e todo tipo de aplicativos que pensa em ter em sua maquina, totalmente personalizados</li>
+            <li> Total confidencialidadede</li>
+            <li>Formatação de computadores</li>
+            <li>construo o programa e instalo em sua máquina, seja computador, mac, sitema linux, androi ou IOS</li>
+            <li>Recuperação de sistema</li>
+            <li>Programa de banco de dados</li>
+            <li>Programa de segurança para proteger sua rede</li>
+            <li>contacte me: 913145703</li>
+
+        </ul>
+    </section>
+
+    <footer>
+        
+    </footer>
+    <p></d>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4LaCMq9wYGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>
+
+        
+        <li>Exemplos de sites e aplicativos</li>
+
+    <p>
+        <img src="img/site5.jpg">
+        <p>
+
+            <img src="img/site11.jpg">
+
+        </p>
+
+            <img src="img/site9.jpg">
+
+         <p>
+
+            <img src="img/site10.jpg">
+         </p>
+
+    <ul>
+        <ul>Sites e aplicativos feitos a sua escolha, com icone personalizado com sua imagem ou seu nome</ul>
+        <ul>Aplicativos para computadores, sitemas windows, IOS, Linux ou android</ul>
+        <ul>email: agnaldosilva@sapo.pt</ul>
+        <ul>contato telemóvel: 913145703</ul>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br />Este trabalho está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Atribuição-NãoComercial-SemDerivações 4.0 Internacional</a>.
+    </ul>
+</body>
+</body>
+</html>
